@@ -1,6 +1,8 @@
 html {
   /*background: url('./assets/background.png') no-repeat center center fixed;*/
-  background: url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/background.png?raw=true') no-repeat center center fixed;
+  /*background: url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/background.png?raw=true') no-repeat center center fixed;
+  */
+ background: url('https://i.ibb.co/5hWwb9D/3D-Woman.jpg') no-repeat center center fixed;  
   box-sizing: border-box;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -11,27 +13,28 @@ html {
 }
 
 h1 {
+  font-family: Trattatello;
   text-align: center;
-  font-size: 90px;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  color: white;
+  font-size: 72px;
+  color: rgb(11, 10, 15);
   -webkit-text-stroke: 2px black;
 }
 
 h2 {
+  font-family: Trattatello;
   text-align: center;
   font-size: 40px;
-  color: white;
+  color: rgb(221, 37, 13);
   -webkit-text-stroke: 1px black;
 }
 
 #start {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 #timer{
-    color: white;
+    color: rgb(46, 10, 209);
 }
 
 .grid {
@@ -79,4 +82,10 @@ h2 {
 .hole.show .mole {
   top: 0;
   /*transform: scale(1.1);*/
+}
+
+button {
+  font-family: Trattatello;
+  background-color: rgb(46, 10, 209);
+  color: rgb(221, 37, 13)
 }

@@ -11,6 +11,7 @@ let lastHole = 0;
 let points = 0;
 let difficulty = "hard";
 
+
 /**
  * Generates a random integer within a range.
  *
@@ -297,17 +298,17 @@ startButton.addEventListener("click", startGame);
 
 /*
 *
-*Adding sound effects
+*            Adding Music....Start Song
 *
-*/
+*/ 
 
 const audioHit = new Audio(
-/*  "https://github.com/gabrielsanchez/erddiagram/blob/main/hit.mp3?raw=true"
+  "https://github.com/gabrielsanchez/erddiagram/blob/main/hit.mp3?raw=true"
 );
-*/
+
 const song = new Audio(
   "https://github.com/gabrielsanchez/erddiagram/blob/main/molesong.mp3?raw=true"
-);
+)
 
 function playAudio(audioObject) {
   audioObject.play();
@@ -320,10 +321,33 @@ function loopAudio(audioObject) {
 
 function stopAudio(audioObject) {
   audioObject.pause();
+  audioObject.currentTime = 0; // Resets audio to the beginning
 }
 
 function play() {
   playAudio(song);
+}
+
+function stop() {
+  stopAudio(song);
+}
+
+// Control Difficulty of the game
+
+function selectDifficulty() {
+  if (difficulty === "easy") {
+    return 1500; // 1.5 seconds
+  } else if (difficulty === "normal") {
+    return 1000; // 1 second
+  } else if (difficulty === "hard") {
+  // Generate a random integer between 600 and 1200
+    return randomInteger(600, 1200);
+  } 
+}
+
+function updateDifficulty() {
+  // Get the selected difficulty from the dropdown
+  difficulty = document.getElementById("difficultySelector").value;
 }
 
 

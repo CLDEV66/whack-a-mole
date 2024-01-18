@@ -15,7 +15,6 @@ html {
 
 body {
   font-family: Trattatello;
-  -webkit-text-stroke: 1px black;
 }
 
 h1 {  
@@ -31,6 +30,7 @@ h2 {
   text-align: center;
   font-size: 36px;
   color: rgb(221, 37, 13);
+  -webkit-text-stroke: 1px black;
 }
 
 h3 {  
@@ -38,6 +38,7 @@ h3 {
   text-align: right;
   font-size: 36px;
   color: rgb(46, 10, 209);
+  -webkit-text-stroke: 1px black;
 }
 
 h4 {
@@ -45,20 +46,22 @@ h4 {
   text-align: left;
   font-size: 36px;
   color: rgb(46, 10, 209);
+  -webkit-text-stroke: 1px black;
 }
 
-select {
+#difficultySelector {
     margin: 5px;
     font-size: 18px;
     background-color: rgb(46, 10, 209);
-    color: rgb(221, 37, 13) 
+    color: rgb(221, 37, 13);
 }
 
-.gameplay {
+.gamePlay {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  justify-content:space-between;
+  padding-top: 40px;
+  
+
 }
 
 #start {
@@ -70,22 +73,23 @@ select {
 
 #score {
   color: rgb(221, 37, 13);
-  text-decoration: underline;
+  text-decoration: underline rgb(46, 10, 209);
   -webkit-text-stroke: 1px black;
 }
 
-#timer{
+#timer {
   color: rgb(148, 149, 202);
-  text-decoration: underline;
+  text-decoration: underline rgb(46, 10, 209);
   -webkit-text-stroke: 1px black;
 }
 
 .grid {
   max-width: 100%;
   width: 100%;
-  height: 850px;
-  display:flex;
+  height: 600px;
+  display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
   /*cursor: url('./assets/mallet.png'), pointer;*/
 }
 
@@ -106,17 +110,17 @@ select {
   position: absolute;
   bottom: -40%;
   z-index: 2;
-  pointer-events:none;
+  pointer-events: none;
 
 }
 
 .mole {
   /*background:url('./assets/mole.png') bottom center no-repeat;*/
-  /*background:url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/mole.png?raw=true') bottom center no-repeat;
-  */
+ /* background:url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/mole.png?raw=true') bottom center no-repeat;*/
+  
 
-  background:url("https://i.ibb.co/3skdh7g/fish.jpg") bottom center no-repeat;
-  background-size: 100%;
+  background:url("https://i.ibb.co/3skdh7g/fish.jpg") bottom center no-repeat; 
+  background-size: 40%;
   position: absolute;
   top: 100%;
   width: 100%;
@@ -131,13 +135,15 @@ select {
   /*transform: scale(1.1);*/
 }
 
-button {
-  
-  background-color: rgb(46, 10, 209);
-  color: rgb(221, 37, 13);
-}
-
 footer {
   text-align: center;
   padding: 15px;
 }
+
+button {
+  background-color: rgb(46, 10, 209);
+  color: rgb(221, 37, 13);
+  font-size: large;
+}
+
+
